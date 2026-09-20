@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "跨物种细胞资料联邦领域事件",
+  "type": "object",
+  "required": [
+    "event_id",
+    "event_type",
+    "aggregate_type",
+    "aggregate_id",
+    "occurred_at",
+    "version",
+    "summary"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "DATASET_REGISTERED",
+        "MAPPING_APPROVED",
+        "RUN_COMPLETED",
+        "CLAIM_PROPOSED",
+        "ACCESS_WITHDRAWN"
+      ]
+    },
+    "aggregate_type": {
+      "type": "string",
+      "enum": [
+        "dataset_version",
+        "ontology_mapping",
+        "model_run",
+        "scientific_claim"
+      ]
+    },
+    "aggregate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": true
+}
