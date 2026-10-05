@@ -2,8 +2,24 @@
   "event_id": "092106-016-sample-001",
   "event_type": "DATASET_REGISTERED",
   "aggregate_type": "dataset_version",
-  "aggregate_id": "cross_species_cell_federation-001",
+  "aggregate_id": "dataset:human-lung:v1",
   "occurred_at": "2026-09-20T15:00:00+08:00",
   "version": 1,
-  "summary": "登记跨物种细胞资料联邦的首条领域记录"
+  "summary": "登记人肺单细胞原始表达矩阵的首个不可变版本",
+  "actor": {
+    "id": "lab-a-data-steward",
+    "role": "data_steward"
+  },
+  "payload": {
+    "dataset_id": "human-lung-atlas",
+    "species": "human",
+    "matrix_kind": "raw_expression",
+    "content_hash": "sha256:7f4a9c21e0b34d6a8f5c17e9b2d40f6a1c8e3b5d7a9f02468ace1357bdf90246",
+    "shape": {
+      "cells": 48213,
+      "genes": 33538
+    },
+    "restriction": "controlled",
+    "subject_ref": "cohort-lung-2026"
+  }
 }

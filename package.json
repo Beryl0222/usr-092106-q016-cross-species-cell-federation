@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "领域事件基础校验",
+  "description": "跨物种细胞资料联邦：数据与发现治理后端（事件溯源）",
   "scripts": {
     "test": "node --test"
   }
